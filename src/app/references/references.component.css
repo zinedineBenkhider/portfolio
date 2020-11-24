@@ -1,0 +1,15 @@
+li.not-active{
+    background-color: rgb(95, 146, 161);
+}
+li.active{
+    background-color: rgb(6, 46, 58);
+}
+section{
+    padding-top: 100px;
+  }
+h2{
+    color: rgb(22, 59, 90);
+}
+
+
+

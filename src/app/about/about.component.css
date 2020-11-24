@@ -1,0 +1,24 @@
+ul {
+  list-style-type: none;
+  }
+fa-icon{
+    font-size: 15px;
+    color: #149ddd;
+   
+    width: 30px;
+    height: 30px;
+    background: #dff3fc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+  }
+h3{
+  font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+}
+
+  

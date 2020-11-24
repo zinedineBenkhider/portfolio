@@ -1,0 +1,31 @@
+li:hover {
+    background-color: rgb(51, 59, 61);
+  }
+  i:hover,a:hover {
+    background-color: rgb(45, 51, 53);
+  }
+  nav{
+      background-color: #212529;
+  }
+  nav .navbar-nav li a{
+    color: #ffffff;
+  }
+i{
+  font-size: 24px;
+  padding-right: 6px;
+  color: #6f7180;
+  
+}
+a{
+  display: flex;
+  align-items: center;
+ 
+  padding: 3px 4px;
+  margin-bottom: 2px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+li{
+  display: inline-flex;
+}
+  /*rgb(34, 84, 99)*/
