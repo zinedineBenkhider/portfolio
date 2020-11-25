@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng b --prod --base-href https://zinedineBenkhider.github.io/portfolio/ && npx ngh --dir=dist/my-portfolio"
+
   },
   "private": true,
   "dependencies": {
