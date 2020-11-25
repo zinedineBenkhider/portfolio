@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { ReferencesComponent } from './references/references.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CompetencesComponent,
     ContactComponent,
     HeaderComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

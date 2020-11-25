@@ -1,0 +1,25 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("/../../assets/images/home-background.jpg") top center;
+    background-size: cover;
+}
+
+#hero p{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+
+}
+h1{
+    color: #fff; 
+   
+}
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
