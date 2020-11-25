@@ -94,6 +94,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 font-awesome
 (OFL-1.1 AND MIT)
 
+jquery
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
