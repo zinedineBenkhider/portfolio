@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng b --prod --base-href https://zinedineBenkhider.github.io/portfolio/ && npx ngh --dir=dist/my-portfolio"
-
   },
   "private": true,
   "dependencies": {
@@ -30,6 +29,7 @@
     "jquery": "^3.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "typed.js": "^2.0.11",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
