@@ -10,6 +10,7 @@ export class ProjectsComponent implements OnInit {
   mauticMonitoringIsShown : boolean=false;
   portfolioIsShown : boolean=false;
   pokedexIsShown : boolean=false;
+  venobox:any;
   constructor() { }
   detailOnClick(project:String){
     if(project=="teamTraveler"){
@@ -36,9 +37,38 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
     }
+    
 
   }
+  onMouse(idLink:String, idImage:String){
+    $( '#' + idLink ).on("mouseenter", function() {
+      $('#' + idImage).css( "opacity", "0.3" );
+      $('#' + idLink).css( "opacity", "1" );
+    }).on('mouseleave', function() {
+      $('#' + idImage).css( "opacity", "1" );
+      $('#' +idLink).css( "opacity", "0" );
+    }
+      
+    );
+
+    $( '#' + idImage ).on("mouseenter", function() {
+      $('#' + idImage).css( "opacity", "0.3" );
+      $('#' +idLink).css( "opacity", "1" );
+    }).on('mouseleave', function() {
+      $('#' + idImage).css( "opacity", "1" );
+      $('#' +idLink).css( "opacity", "0" );
+    }
+    );
+  }
   ngOnInit(): void {
+   this.onMouse("portfolio-link","portfolio-img");
+   this.onMouse("teamTraveler-link","teamTraveler-img");
+   this.onMouse("mautic-link","mautic-img");
+   this.onMouse("pokedex-link","pokedex-img");
+   
+   this.venobox=$('.venobox');
+   this.venobox.venobox(); 
+   
   }
 
 }

@@ -20,5 +20,20 @@ h3{
     font-size: 26px;
     color: #173b6c;
 }
+.btn-social-media{
+  border-radius: 50px;
+  width: 40px;
+    height: 40px;
+    color: #ffffff;
+  align-items: center;
+
+  display: inline-flex;
+    justify-content: center;
+    background: #149ddd;
+  margin-right:10px;
+  margin-left:10px;
+  margin-top:10px;
+
+}
 
   

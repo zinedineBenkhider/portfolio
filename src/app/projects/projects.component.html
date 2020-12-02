@@ -1,30 +1,52 @@
-<section id="projects">
+<section id="portfolio">
     <div class="container" >
-        <h2><strong>Projets</strong></h2>
+        <h2><strong>Portfolio</strong></h2>
         <span class="bar-title mb-5"></span>
         <div class="row">
         
             <div class="col-lg-4 col-sm-12 " data-aos="flip-up">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top" style="height: 400px;"  src="assets/images/voyages.webp" alt="team traveler app">
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="teamTraveler-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/voyages.webp)'}" >
+                        </div>
+                        <div id="teamTraveler-link" class="links mt-auto d-flex justify-content-center">
+                            <a href="assets/images/voyages.webp" data-gall="teamTravelerGallery" class="venobox vbox-item" title="Mes Voyages"><i class="bx bx-zoom-in bx-md"></i></a>
+                            <a href="assets/images/voyage.webp" data-gall="teamTravelerGallery" class="venobox vbox-item" title="Détail du voyage"></a>
+                            <a href="assets/images/logements.webp" data-gall="teamTravelerGallery" class="venobox vbox-item" title="Mes Logements"></a>
+                            <a href="https://play.google.com/store/apps/details?id=team.traveler.teamtraveler" title="Télécharger sur Google Play" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                        </div>
+                    </div>
+
                     <div class="card-body">
-                        <h3 class="card-title">Team Traveler</h3>
-                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
-                        <p class="card-text">Android Studio, Java, FireBase, MVP, NoSql</p>
-                        <div class="d-flex flex-row justify-content-center">
-                            <a href="https://github.com/zinedineBenkhider/team_traveler" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
-                            <button (click)="detailOnClick('teamTraveler')" type="button" class="btn btn-primary">+ Détail projet</button>
-                        </div>
-                        <div *ngIf="teamTravelerIsShown" class="mt-3">
-                            <p>L'application vous permettra d'organiser des voyage en groupe facilement et rapidement. Votez pour les dates, les transports, hébergement ou même les activités.
+                            <h3 class="card-title">Team Traveler</h3>
+                            <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                            <p class="card-text">Android Studio, Java, FireBase, MVP, NoSql</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <a href="https://github.com/zinedineBenkhider/team_traveler" target="_blank" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                                <button (click)="detailOnClick('teamTraveler')" type="button" class="btn btn-primary">+ Détail projet</button>
+                            </div>
+                            <div *ngIf="teamTravelerIsShown" class="mt-3">
+                                <p>L'application vous permettra d'organiser des voyage en groupe facilement et rapidement. Votez pour les dates, les transports, hébergement ou même les activités.
                                 Grâce à cette <a title="Télécharger sur Google Play" href="https://play.google.com/store/apps/details?id=team.traveler.teamtraveler">application</a>  plus de problème de choix ou désaccords.</p>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top" style="height: 400px;" src="assets/images/mautic_monitoring.jpg" alt="Girl in a jacket">
+
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div  id="mautic-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/compagnes.jpg)'}" >
+
+                        </div>
+                        <div id="mautic-link" class="links mt-auto d-flex justify-content-center">
+                            <a href="assets/images/compagnes.jpg" data-gall="MauticGallery" class="venobox vbox-item" title="Compagnes de marketing"><i class="bx bx-zoom-in bx-md"></i></a>
+                            <a href="assets/images/compagne-detail.jpg" data-gall="MauticGallery" class="venobox vbox-item" title="Détail de la compagne"></a>
+                            <a href="assets/images/email-detail.jpg" data-gall="MauticGallery" class="venobox vbox-item" title="Performance d'un émail"></a>
+                            <a href="assets/images/asset-detail.jpg" data-gall="MauticGallery" class="venobox vbox-item" title="Performance d'un Asset"></a>
+                            <a href="#projects" title="En cours" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">Mautic Monitoring</h3>
                         <h5 class="card-title"><strong>Technologies:</strong>  </h5>
@@ -36,40 +58,29 @@
                         <div *ngIf="mauticMonitoringIsShown" class="mt-3">
                             <p>Mautic est un outil open source de marketing automatique</p>
                             <p>L'application permet d'avoir des rapports dynamiques et détaillés, d’analyser les tendances individuels des campagnes.<br>
-                                Un tableau de bord visuellement convivial vous donne un point de vue rapide unique sur la performance de vos campagnes numériques, assets, et formulaires
+                                Un tableau de bord visuellement convivial vous donne un point de vue rapide unique sur la performance de: vos campagnes numériques, assets, et formulaires.
+
                             </p>
+                            <p>L'application est disponible en Français et en Anglais.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
-                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top" style="height: 400px;"  src="assets/images/portfolio.png" alt="portfolio">
-                    <div class="card-body">
-                        <h3 class="card-title">Portfolio</h3>
-                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
-                        <p class="card-text">Angular11, Html5, CSS, TypeScript, BootStrap</p>
-                        
-                        <div class="d-flex flex-row justify-content-center">
-                            <a href="https://github.com/zinedineBenkhider/portfolio" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
-                            <button (click)="detailOnClick('portfolio')"  type="button" class="btn btn-primary">+ Détail projet</button>
-                        </div>
-                    
-                        <div *ngIf="portfolioIsShown" class="mt-3">
-                            <p>L'application vous permettra d'organiser des voyage en groupe facilement et rapidement. Votez pour les dates, les transports, hébergement ou même les activités.
-                                Grâce à cette <a title="Télécharger sur Google Play" href="https://play.google.com/store/apps/details?id=team.traveler.teamtraveler">application</a> plus de problème de choix ou désaccords.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
                 <div class="card shadow-lg p-3  bg-white rounded">
-                    <img class="card-img-top" style="height: 400px;" src="assets/images/pokedex-architecture.png" alt="Girl in a jacket">
+                    <div  class="card-header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="pokedex-img" class="img-wrap" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/pokedex-architecture.png)'}" >
+
+                        </div>
+                        <div id="pokedex-link" class="links mt-auto d-flex justify-content-center">
+                            <a href="assets/images/pokedex-architecture.png" data-gall="pokedexGallery" class="venobox vbox-item" title="Architecture"><i class="bx bx-zoom-in bx-md"></i></a>
+                            <a href="https://medium.com/zinedine-projects/beautiful-cv-portfolio-72921a198640" title="Article" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+                        </div>
+                    </div>
+                   
                     <div class="card-body">
                         <h3 class="card-title">Pokedex</h3>
-                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <h5 class="card-title"><strong>Technologies:</strong> </h5>
                         <p class="card-text">Java, J2EE, SpringBoot, TDD, MySQL, BootStrap, Services, Deploiment</p>
                         <div class="d-flex flex-row justify-content-center">
                             <a href="https://github.com/ifi-2019/trainer-ui-zinedineBenkhider" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
@@ -82,6 +93,37 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded"> 
+              
+                    <div  class="header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="portfolio-img" class="img-wrap card-header" style="height: 300px;width: 100%;  " [ngStyle]="{backgroundImage:'url(assets/images/portfolio.png)'}" >
+                        </div>
+                        <div id="portfolio-link" class="links d-flex justify-content-center" >
+                            <a href="assets/images/portfolio.png" data-gall="portfolioGallery" class="venobox vbox-item" title="Portfolio"><i class="bx bx-zoom-in bx-md"></i></a>
+                            <a href="https://medium.com/zinedine-projects/beautiful-cv-portfolio-72921a198640" title="Article" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+             
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Portfolio</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">Angular11, Html5, CSS, TypeScript, BootStrap</p>
+                        
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/zinedineBenkhider/portfolio" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('portfolio')"  type="button" class="btn btn-primary">+ Détail projet</button>
+                        </div>
+                    
+                        <div *ngIf="portfolioIsShown" class="mt-3">
+                            <p>CV sous forme de site WEB responsive que j'ai mis en open-source sur GitHub accompagné d'une publication d'un <a title="Voir l'article" href="https://medium.com/zinedine-projects/beautiful-cv-portfolio-72921a198640" target="_blank">article</a> sur medium. 
+                         </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 </section>
