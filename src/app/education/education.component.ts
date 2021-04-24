@@ -12,6 +12,7 @@ export class EducationComponent implements OnInit {
   stageIsShown: boolean = false ;
   freelanceIsShown : boolean = false;
   alternanceIsShown:boolean = false;
+  freelanceScotfyIsShown:boolean = false;
   planeIcon: any ;
   gameIcon:any;
   volleyBallIcon:any;
@@ -24,6 +25,9 @@ export class EducationComponent implements OnInit {
     }
     else if(id=="stage_detail"){
       this.stageIsShown = !this.stageIsShown;
+    }
+    else if(id=="freelanceScotfy_detail"){
+      this.freelanceScotfyIsShown = !this.freelanceScotfyIsShown;
     }
    
   }

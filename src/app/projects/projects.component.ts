@@ -10,6 +10,7 @@ export class ProjectsComponent implements OnInit {
   mauticMonitoringIsShown : boolean=false;
   portfolioIsShown : boolean=false;
   pokedexIsShown : boolean=false;
+  riddleIsShown: boolean=false;
   venobox:any;
   constructor() { }
   detailOnClick(project:String){
@@ -18,24 +19,36 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown=false;
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
+      this.riddleIsShown=false;
     }
     else if(project=="mauticMonitoring"){
       this.mauticMonitoringIsShown = !this.mauticMonitoringIsShown;
       this.teamTravelerIsShown=false;
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
+      this.riddleIsShown=false;
     }
     else if(project=="portfolio"){
       this.portfolioIsShown = !this.portfolioIsShown;
       this.teamTravelerIsShown=false;
       this.mauticMonitoringIsShown =false;
       this.pokedexIsShown=false;
+      this.riddleIsShown=false;
     }
     else if(project=="pokedex"){
       this.pokedexIsShown = !this.pokedexIsShown;
       this.teamTravelerIsShown=false;
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
+      this.riddleIsShown=false;
+    }
+    else if(project=="riddleIsShown"){
+      this.riddleIsShown = !this.riddleIsShown;
+      this.teamTravelerIsShown=false;
+      this.mauticMonitoringIsShown =false;
+      this.portfolioIsShown=false;
+      this.pokedexIsShown=false;
+
     }
     
 
@@ -65,7 +78,7 @@ export class ProjectsComponent implements OnInit {
    this.onMouse("teamTraveler-link","teamTraveler-img");
    this.onMouse("mautic-link","mautic-img");
    this.onMouse("pokedex-link","pokedex-img");
-   
+   this.onMouse("riddle-link","riddle-img");
    this.venobox=$('.venobox');
    this.venobox.venobox(); 
    

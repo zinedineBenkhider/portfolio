@@ -29,39 +29,57 @@
                 <ul class="timeline">
                     <li>
                         <h5>Dévloppeur en freelance</h5>
+                        <em>Scotfy, Lyon, Fr</em>
+                        <div class="d-flex flex-row">
+                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (2 mois)</p>
+                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary">+
+                                Detail</button>
+                        </div>
+                        <p *ngIf="freelanceScotfyIsShown">
+
+                            <strong>Tâche 1:</strong> Développement d'un gestionnaire de thèmes (mode, couleurs, logo). <br>
+                            <strong>Tâche 2:</strong> Développement d'un gestionnaire de dossiers virtuels qui peuvent contenir des apps QlikSense.<br>
+                            <strong>Tâche 3:</strong> Développement de pages web personnalisables (QlikSense Mashup).<br>
+                            <strong>Tâche 4:</strong> Développement de la version SaaS de l'outil (En cours).<br>
+                            <strong>Téchnologies:</strong> C#, .NET, Angular 11, pgSql, QlikSense
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Dévloppeur en freelance</h5>
                         <em>AGC Glass Europe, Maubeuge, Fr</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2">2020 - 2021</p>
+                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (5 mois)</p>
                             <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
-                                Detail mission</button>
+                                Detail</button>
                         </div>
                         <p *ngIf="freelanceIsShown">
-                            <strong>Mission :</strong>Amélioration d'une application de gestion des camions entrant sur le site<br>
-                            <strong>Téchnologies:</strong> JAVA, VBA, MySql, J2EE, Angular
+                           
+                            <strong>Mission 1:</strong> Développement d'une application de notation de fournisseurs par les acheteurs.<br>
+                            <strong>Mission 2:</strong> Maintenance évolutive et corrective d'applications.<br>
+                            <strong>Téchnologies:</strong> JAVA 8, Spring, Angular 8, MySql
                         </p>
                     </li>
                     <li>
                         <h5>Dévloppeur en alternance</h5>
                         <em>AGC Glass Europe, Maubeuge, Fr</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2">2019 - 2020</p>
+                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 an)</p>
                             <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
-                                Detail mission</button>
+                                Detail</button>
                         </div>
                         <p *ngIf="alternanceIsShown">
                             <strong>Mission 1:</strong> Application de gestion des camions entrant sur le site<br>
-                            <strong>Mission 2:</strong> Amélioration d'une application qui permet de détecter si des
-                            intervenants extérieurs travaillent au même endroit<br>
-                            <strong>Mission 3:</strong> Mise en forme des commandes du verre, dans l’intérêt d'une
+                            <strong>Mission 2:</strong> Amélioration d'une application de création de plans de préventions.<br>
+                            <strong>Mission 3:</strong> Application de mise en forme des commandes du verre, dans l’intérêt d'une
                             meilleure lisibilité des priorités pour les équipes de production. <br>
-                            <strong>Téchnologies:</strong> JAVA, VBA, MySql, J2EE, Angular
+                            <strong>Téchnologies:</strong>  JAVA 8, Spring, Angular 8, MySql
                         </p>
                     </li>
                     <li>
                         <h5>Stagiaire Dévloppeur logiciel</h5>
                         <em>Scotfy, Lyon, Fr</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2018</p>
+                            <p class="year p-2 d-flex justify-content-center">2018 (3 mois)</p>
                             <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
                                 Detail mission</button>
 
@@ -121,7 +139,7 @@
                         <div class="noProgress langue">
                             <span>
                                 <fa-icon [icon]="gameIcon"></fa-icon><strong> Jeux de sociétés </strong> <i class="val">
-                                    Jeux de damme, Dominos, Ludo</i>
+                                    Jeu de dames et de dominos, Among US, Ludo, ..etc</i>
                             </span>
                         </div>
 

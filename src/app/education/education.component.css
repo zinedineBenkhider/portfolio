@@ -40,9 +40,9 @@ ul.timeline > li:before {
 }
 .year{
     background-color: #e4edf9; 
-    width: 105px; 
-    padding-left: 10px;
-    margin-right: 10px;
+    width: 190px; 
+    padding-left: 5px;
+    margin-right: 5px;
     height: 40px;
 }
 button{

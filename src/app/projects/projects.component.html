@@ -125,6 +125,37 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-sm-12"  data-aos="flip-up">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded"> 
+              
+                    <div  class="header d-flex flex-column " style="height: 300px;width: 100%; "  >    
+                        <div id="riddle-img" class="img-wrap card-header" style="height: 300px;width: 100%;" [ngStyle]="{backgroundImage:'url(assets/images/riddle.png)'}" >
+                        </div>
+                        <div id="riddle-link" class="links d-flex justify-content-center" >
+                            <a href="assets/images/riddle.png" data-gall="riddleGallery" class="venobox vbox-item" title="riddle"><i class="bx bx-zoom-in bx-md"></i></a>
+                            <a href="https://transfer-riddle-solver.herokuapp.com/index.html" title="Lien" target="_BLANK"><i class="bx bx-link bx-md"></i></a>
+             
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Transfer Riddle</h3>
+                        <h5 class="card-title"><strong>Technologies:</strong>  </h5>
+                        <p class="card-text">Java, J2EE(Web Services), JavaScript, Html5, CSS, BootStrap</p>
+                        
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="https://github.com/zinedineBenkhider/transfer_riddle_client" target="_blank" type="button" class="btn btn-primary mr-3">Code Source</a> 
+                            <button (click)="detailOnClick('riddleIsShown')"  type="button" class="btn btn-primary">+ Détail projet</button>
+                        </div>
+                    
+                        <div *ngIf="riddleIsShown" class="mt-3">
+                            <p> 
+                                Affichage des étapes de la résolution d'énigme de transvasement. Étant donné deux réservoirs vides de contenance X et Y, comment obtenir précisément T litres dans l’un des deux réservoirs (T étant un entier).
+                                On peut remplir ou vider un réservoir, et transvaser le contenu de l’un dans l’autre, jusqu’à ce que la source soit vide ou la destination pleine.
+                         </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             
         </div>
