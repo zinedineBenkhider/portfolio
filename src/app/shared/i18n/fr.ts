@@ -59,6 +59,7 @@ export const locale = {
             'skills': 'Compétences',
             'references': 'Recommandations',
             'contactMe': 'Me Contacter',
+            
         },
         'home': {
             'iAmDeveloper': 'Je suis développeur',
