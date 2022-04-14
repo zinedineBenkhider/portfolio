@@ -18,4 +18,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-radio-input{
     margin-left: 3.5px!important;
-  }
+}
+
+.mat-radio-label{
+    margin-bottom: 0px!important;
+}
