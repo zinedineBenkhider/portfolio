@@ -1,10 +1,12 @@
 
-  h2{
-    color: rgb(22, 59, 90);
+h2{
+  color: rgb(22, 59, 90);
 }
+
 li.not-active{
   background-color: rgb(95, 146, 161);
 }
+
 li.active{
   background-color: rgb(6, 46, 58);
 }
@@ -16,12 +18,8 @@ li.active{
   opacity: 1;
   background: top center;
   background-size: cover;
-
   position: relative;
-
 }
-
-
 
 .links{
   opacity: 0;
@@ -30,8 +28,6 @@ li.active{
   left: 0;
   right: 0;
   text-align: center;
-  
-  
 }
 
 

@@ -1,94 +1,45 @@
 <section id="cv">
     <div class="container">
-        <h2><strong>Curriculum Vitae</strong></h2>
+        <h2><strong>   {{'education.title' | translate}}</strong></h2>
         <span class="bar-title mb-5"></span>
         <div class="row">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Education</strong></h4>
-
+                <h4><strong>{{'education.eductionTitle' | translate}}</strong></h4>
                 <ul class="timeline">
                     <li>
-                        <h5><strong>Master 2 E-services</strong> </h5>
-                        <em class="font-italic">Master of degital services<br> Université De Lille, Fr</em>
+                        <h5><strong>{{'education.masterDegreeTwo' | translate}}</strong> </h5>
+                        <em class="font-italic">{{'education.masterDegreeTwoDesc' | translate}}<br> {{'education.university' | translate}}</em>
                         <p class="year p-2 d-flex justify-content-center">2019 - 2020</p>
                     </li>
                     <li>
-                        <h5>Master 1 informatique</h5>
-                        <em class="font-italic">General Master Computer Science <br> Université De Lille, Fr</em>
+                        <h5>{{'education.masterDegreeOne' | translate}}</h5>
+                        <em class="font-italic">{{'education.masterDegreeOneDesc' | translate}} <br> {{'education.university' | translate}}</em>
                         <p class="year p-2 d-flex justify-content-center">2018 - 2019</p>
                     </li>
                     <li>
-                        <h5>Licence 3 informatique</h5>
-                        <em class="font-italic">Licence of Computer Science <br> Université De Lille, Fr</em>
+                        <h5>{{'education.bachlorDegree' | translate}}</h5>
+                        <em class="font-italic">{{'education.bachlorDegreeDesc' | translate}}<br> {{'education.university' | translate}}</em>
                         <p class="year p-2 d-flex justify-content-center">2015 - 2018</p>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4><strong>Expériences</strong></h4>
+                <h4><strong>{{'education.experiencesTitle' | translate}}</strong></h4>
                 <ul class="timeline">
-                    <li>
-                        <h5>Dévloppeur en freelance</h5>
-                        <em>Scotfy, Lyon, Fr</em>
+                    <li *ngFor="let experience of experiences;">
+                        <h5>{{experience.title}}</h5>
+                        <em>{{experience.company}}</em>
                         <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (2 mois)</p>
-                            <button (click)="detailOnClick('freelanceScotfy_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
+                            <p class="year p-2 d-flex justify-content-center">{{experience.period}}</p>
+                            <button (click)="detailOnClick(experience)" type="button"
+                                class="btn btn-primary">
+                                <span *ngIf="!experience.detailIsDisplayed">+</span><span *ngIf="experience.detailIsDisplayed">-</span> {{'education.detail' | translate}}</button>
                         </div>
-                        <p *ngIf="freelanceScotfyIsShown">
-
-                            <strong>Tâche 1:</strong> Mise en place d'un gestionnaire de thèmes (couleurs, logo). <br>
-                            <strong>Tâche 2:</strong> Mise en place d'un gestionnaire de dossiers virtuels qui peuvent contenir des apps Qlik Sense.<br>
-                            <strong>Tâche 3:</strong> Développement d'une interface de sauvegarde des ressources.<br>
-                            <strong>Tâche 4:</strong> Création de pages web personnalisables : Qlik Sense Mashups (En cours).<br>
-                            <strong>Téchnologies:</strong> Java, J2EE, Angular 11, Angular Materials, pgSql, Qlik Sense
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Dévloppeur en freelance</h5>
-                        <em>AGC Glass Europe, Maubeuge, Fr</em>
-                        <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2020 - 2021 (5 mois)</p>
-                            <button (click)="detailOnClick('freelance_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
-                        </div>
-                        <p *ngIf="freelanceIsShown">
-                            <strong>Mission 1:</strong> Développement d'une application de notation de fournisseurs par les acheteurs.<br>
-                            <strong>Mission 2:</strong> Maintenance évolutive et corrective d'applications.<br>
-                            <strong>Téchnologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Dévloppeur en alternance</h5>
-                        <em>AGC Glass Europe, Maubeuge, Fr</em>
-                        <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 an)</p>
-                            <button (click)="detailOnClick('alternance_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
-                        </div>
-                        <p *ngIf="alternanceIsShown">
-                            <strong>Mission 1:</strong> Application de gestion des camions entrant sur le site<br>
-                            <strong>Mission 2:</strong> Amélioration d'une application de création de plans de préventions.<br>
-                            <strong>Mission 3:</strong> Application de mise en forme des commandes du verre, dans l’intérêt d'une
-                            meilleure lisibilité des priorités pour les équipes de production. <br>
-                            <strong>Téchnologies:</strong>  JAVA 8, Spring, Angular 8, Angular Materials, MySql
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Stagiaire Dévloppeur logiciel</h5>
-                        <em>Scotfy, Lyon, Fr</em>
-                        <div class="d-flex flex-row">
-                            <p class="year p-2 d-flex justify-content-center">2018 (3 mois)</p>
-                            <button (click)="detailOnClick('stage_detail')" type="button" class="btn btn-primary">+
-                                Detail</button>
-
-                        </div>
-                        <p *ngIf="stageIsShown">
-                            <strong>Multilingue:</strong> Mise en place d’un système de gestion de la langue afin de
-                            permettre à l’utilisateur de choisir la langue des interfaces, des messages et des logs.<br>
-                            <strong>Clé de licence:</strong> Validation du logiciel à l’aide d’une clé de licence basée
-                            sur le nom d’utilisateur Windows.<br>
-                            <strong>Technologies:</strong> C#, .NET, Chiffrement AES-256
+                        <p *ngIf="experience.detailIsDisplayed">
+                            <span *ngFor="let mission of experience.missions;let index = index">
+                                <strong>{{'education.mission' | translate}} {{index+1}}: </strong>{{mission}} <br>
+                            </span>
+                            <strong>{{'education.technologies' | translate}}:</strong> {{experience.technologies}}
                         </p>
                     </li>
 
@@ -97,53 +48,43 @@
             <div class="col-lg-4 col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="container row">
                     <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <h4><strong>Langues</strong></h4>
+                        <h4><strong>{{'education.languages' | translate}}</strong></h4>
                         <div class="noProgress langue">
                             <span class=""><img src="assets/images/france-flag.png" width="20"
-                                    alt="drapeau de la france"><strong> Français</strong> <i class="val">
-                                    Courant</i></span>
+                                    alt="drapeau de la france"><strong> {{'education.french' | translate}}</strong> <i class="val">
+                                        {{'education.fluent' | translate}}</i></span>
                         </div>
-
                         <div class="noProgress langue">
                             <span class=""><img src="assets/images/united-kingdom-flag.png" width="20"
-                                    alt="drapeau du royaume uni"><strong> Anglais</strong> <i class="val"> Bon
-                                    niveau</i></span>
+                                    alt="drapeau du royaume uni"><strong> {{'education.english' | translate}}</strong> <i class="val"> {{'education.goodLevel' | translate}}</i></span>
                         </div>
-
-                
-
                     </div>
                 </div>
                 <div class="container row">
                     <div class="mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <h4><strong>Centre d'intérêt</strong></h4>
+                        <h4><strong>{{'education.centerOfInterest' | translate}}</strong></h4>
                         <div class="noProgress langue">
                             <span>
-                                <fa-icon [icon]="volleyBallIcon"></fa-icon><strong> Sport</strong> <i class="val"> 5 ans
+                                <fa-icon [icon]="volleyBallIcon"></fa-icon><strong> {{'education.sport' | translate}}</strong> <i class="val"> 5 {{'education.years' | translate}}
                                     Volley Ball</i>
                             </span>
                         </div>
 
                         <div class="noProgress langue">
                             <span>
-                                <fa-icon [icon]="planeIcon"></fa-icon><strong> Voyages</strong> <i class="val">
-                                    Belgique, Espagne, Pays-Bas, Suisse</i>
+                                <fa-icon [icon]="planeIcon"></fa-icon><strong> {{'education.trips' | translate}}</strong> <i class="val">
+                                    {{'education.tripsCountries' | translate}} </i>
                             </span>
                         </div>
-
                         <div class="noProgress langue">
                             <span>
-                                <fa-icon [icon]="gameIcon"></fa-icon><strong> Jeux de sociétés </strong> <i class="val">
-                                    Jeu de dames et de dominos, Among US, Ludo, ..etc</i>
+                                <fa-icon [icon]="gameIcon"></fa-icon><strong> {{'education.boardGames' | translate}} </strong> <i class="val">
+                                    {{'education.boardGamesPlayed' | translate}} </i>
                             </span>
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     </div>
 </section>

@@ -5,14 +5,9 @@
     width: 100%;
 }
 
-
-
-
-
 #skillgraph {
-  padding: 1em; }
-
-
+  padding: 1em; 
+}
 
 .skill-percent{
   margin-top: 10px;
@@ -23,12 +18,12 @@
 .skillLabel{
   width: 100%;
   margin-top: 10px;
-
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #050d18d7;
 
 }
+
 .competence-Wrapper{
   line-height: 0.1 0.7em;
   height: 12px;
@@ -37,31 +32,39 @@
   color: white;
   text-align: center;
 }
+
 .skillData-Wrapper, .label {
-  width: 100%; }
+  width: 100%; 
+}
+
 .skillData, .skillData-Wrapper {
   line-height: 0.1 0.7em;
   height: 12px;
-  
   float: left;
   color: white;
-  text-align: center; }
+  text-align: center; 
+}
 
 .excellent{
   width: 90%;
 }
+
 .very-good{
   width: 80%;
 }
+
 .good{
   width: 70%;
 }
+
 .average{
   width: 50%;
 }
- .bg-rust {
+
+.bg-rust {
     background-color: #149ddd;
 }
+
 a{
   text-decoration: none;
 }

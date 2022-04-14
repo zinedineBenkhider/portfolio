@@ -14,3 +14,8 @@ h2{
     color: rgb(22, 59, 90);
 }
 html{scroll-behavior: smooth;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-radio-input{
+    margin-left: 3.5px!important;
+  }

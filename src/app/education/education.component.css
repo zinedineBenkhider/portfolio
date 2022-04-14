@@ -2,6 +2,7 @@ ul.timeline {
     list-style-type: none;
     position: relative;
 }
+
 ul.timeline:before {
     content: ' ';
     background: #105572;
@@ -12,6 +13,7 @@ ul.timeline:before {
     height: 100%;
     z-index: 400;
 }
+
 .skills .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -19,13 +21,16 @@ ul.timeline:before {
     margin-bottom: 15px;
     color: #050d18;
 }
+
 h3 {
     font-family: "Raleway", sans-serif;
 }
+
 ul.timeline > li {
     margin: 20px 0;
     padding-left: 20px;
 }
+
 ul.timeline > li:before {
     content: ' ';
     background: white;
@@ -38,6 +43,7 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
+
 .year{
     background-color: #e4edf9; 
     width: 190px; 
@@ -48,13 +54,14 @@ ul.timeline > li:before {
 button{
     height: 40px;
 }
+
 .langue {
     margin-bottom: 15px;
 }
+
 fa-icon{
     font-size: 15px;
     color: #149ddd;
-   
     width: 30px;
     height: 30px;
     background: #dff3fc;
@@ -63,5 +70,4 @@ fa-icon{
     align-items: center;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-
   }
